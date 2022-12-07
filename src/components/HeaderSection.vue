@@ -6,23 +6,23 @@
       <span>fashion</span>
       <span>favorite</span>
       <span>lifestyle</span>
-      <ButtonBlack :text="textButton" :buttonStyles="styles"/>
+      <ButtonMain :text="textButton" :buttonStyles="buttonStyles"/>
     </div>
 
   </div>
 </template>
 
 <script>
-import ButtonBlack from '@/components/ButtonBlack';
+import ButtonMain from '@/components/ButtonMain';
 export default {
   name: 'HeaderSection',
   components: {
-    ButtonBlack,
+    ButtonMain,
   },
   data() {
     return {
       textButton: 'sign up',
-      styles: {
+      buttonStyles: {
         color: '#fff',
         fontSize: '24px',
         padding: '15px 22px',

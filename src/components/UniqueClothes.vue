@@ -8,7 +8,7 @@
         <div class="descr">Live for Influential and Innovative fashion!</div>
         <div class="wrap-leaf">
           <img class="leaf" src="@/assets/leaf.svg" alt="icon">
-          <ButtonBlack :text="buttonText" :buttonStyles="styles" />
+          <ButtonMain :text="buttonText" :buttonStyles="buttonStyles" />
         </div>
       </div>
       <div> <img src="@/assets/pingGerl.png" alt="photo"></div>
@@ -17,16 +17,16 @@
 </template>
 
 <script>
-import ButtonBlack from '@/components/ButtonBlack';
+import ButtonMain from '@/components/ButtonMain';
 export default {
   name: 'UniqueClothes',
   components: {
-    ButtonBlack,
+    ButtonMain,
   },
   data() {
     return {
       buttonText: 'shop now',
-      styles: {
+      buttonStyles: {
         color: '#fff',
         fontSize: '30px',
         padding: '20px 40px',
