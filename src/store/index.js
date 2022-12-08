@@ -9,11 +9,16 @@ export default new Vuex.Store({
   state: {
     sectionTitles: {
       collection: 'new arrivals ',
-      favourite: 'my favourite'
-    }
+      favourite: 'young’s favourite',
+      capitalize: 'capitalize',
+    },
+    
   },
   getters: {
-    getCollectionTitle: ({ sectionTitles }) => sectionTitles.collection
+    getCollectionTitle: ({ sectionTitles }) => sectionTitles.collection,
+    titleText: ({ sectionTitles }) => sectionTitles.favourite,
+    textTransform: ({ sectionTitles }) => sectionTitles.capitalize,
+
   },
   mutations: {},
   actions: {},

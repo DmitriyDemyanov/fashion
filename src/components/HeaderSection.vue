@@ -57,6 +57,7 @@ span {
   font-size: 22px;
   line-height: 33px;
   text-transform: uppercase;
+
 }
 
 </style>

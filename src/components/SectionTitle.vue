@@ -1,6 +1,6 @@
 <template>
   <div class=" position-relative d-flex header-title">
-    <h2 class="title">{{title}}</h2>
+    <h2 class="title" :style="`text-transform: ${styleText}`">{{title}}</h2>
     <div class="leaf">
       <img src="@/assets/leafTitle.svg" alt="img">
     </div>
@@ -14,6 +14,10 @@ export default {
     title: {
       type: String,
       required: true,
+    },
+    styleText: {
+      type: String,
+      default: '',
     }
   }
 }

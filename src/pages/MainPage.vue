@@ -10,6 +10,11 @@
     <BContainer>
       <NewCollection />
     </BContainer>
+    <SaleSection />
+    <BContainer>
+      <FavouriteSection />
+    </BContainer>
+
   </div>
 </template>
 
@@ -18,8 +23,8 @@ import HeaderSection from '@/components/HeaderSection';
 import UniqueClothes from '@/components/UniqueClothes';
 import OurPartners from '@/components/OurPartners';
 import NewCollection from '@/components/NewCollection';
-
-
+import SaleSection from '@/components/SaleSection';
+import FavouriteSection from '@/components/FavouriteSection';
 import { mapGetters } from 'vuex';
 
 export default {
@@ -29,9 +34,11 @@ export default {
     UniqueClothes,
     OurPartners,
     NewCollection,
+    SaleSection,
+    FavouriteSection,
   },
   computed: {
-    ...mapGetters('partners' , ['getPartners']),
+    ...mapGetters('partners', ['getPartners']),
   }
 }
 </script>

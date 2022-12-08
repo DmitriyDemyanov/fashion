@@ -43,7 +43,6 @@ export default {
 .clother-wraper {
   background-color: #F4F6F5;
   border-radius: 59px;
-  min-width: 1720px;
   min-height: 850px;
   margin-top: 56px;
   padding-top: 77px;
