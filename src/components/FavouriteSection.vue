@@ -1,9 +1,9 @@
 <template>
   <div class="favourite-wrap">
-    <SectionTitle :title="titleText" :styleText="textTransform"/>
+    <SectionTitle :title="getFavouriteTitle" styleText="capitalize"/>
     <div class="card-wrapper d-flex justify-content-between">
-      <FavouriteItem/>
-      <FavouriteItem/>
+      <FavouriteItem :collection="item" v-for="(item, index) in getFavouriteCollection " :key="index"/>
+
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
   },
 
 computed: {
-  ...mapGetters(['titleText','textTransform']),
+  ...mapGetters(['getFavouriteTitle','getFavouriteCollection']),
 }
 
 

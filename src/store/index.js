@@ -10,14 +10,25 @@ export default new Vuex.Store({
     sectionTitles: {
       collection: 'new arrivals ',
       favourite: 'young’s favourite',
-      capitalize: 'capitalize',
     },
-    
+    sectionFavourite: [
+      {
+        img: 'youngGirl-1',
+        title: 'Trending on instagram',
+      },
+      {
+        img: 'youngGirl-2',
+        title: 'All Under $40',
+      },
+    ]
+
+
+
   },
   getters: {
     getCollectionTitle: ({ sectionTitles }) => sectionTitles.collection,
-    titleText: ({ sectionTitles }) => sectionTitles.favourite,
-    textTransform: ({ sectionTitles }) => sectionTitles.capitalize,
+    getFavouriteTitle: ({ sectionTitles }) => sectionTitles.favourite,
+    getFavouriteCollection: ({ sectionFavourite }) => sectionFavourite,
 
   },
   mutations: {},

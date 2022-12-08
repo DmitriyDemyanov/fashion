@@ -1,7 +1,7 @@
 <template>
   <div class="item-wrap">
-    <img :src="require(`@/assets/youngGirl-1.png`)" alt="photo">
-    <div class="title">Trending on instagram</div>
+    <img :src="require(`@/assets/${collection.img}.png`)" alt="photo">
+    <div class="title">{{collection.title}}</div>
     <div class="descr">Explore Now!</div>
   </div>
 </template>
@@ -9,6 +9,12 @@
 <script>
 export default {
   name: 'FavouriteItem',
+  props: {
+    collection: {
+      type: Object,
+      required: true,
+    }
+  }
 }
 </script>
 

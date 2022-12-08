@@ -1,15 +1,17 @@
 <template>
-  <div class=" position-relative d-flex header-title">
-    <h2 class="title" :style="`text-transform: ${styleText}`">{{title}}</h2>
-    <div class="leaf">
-      <img src="@/assets/leafTitle.svg" alt="img">
-    </div>
+  <div class="position-relative d-flex header-title">
+    <h2 class="title" :style="`text-transform: ${styleText}`">
+      {{ title }}
+      <span class="leaf">
+        <img src="@/assets/leafTitle.svg" alt="img" />
+      </span>
+    </h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SectionTitle',
+  name: "SectionTitle",
   props: {
     title: {
       type: String,
@@ -17,25 +19,25 @@ export default {
     },
     styleText: {
       type: String,
-      default: '',
-    }
-  }
-}
+      default: "uppercase",
+    },
+  },
+};
 </script>
 
 <style scoped>
 .title {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
   line-height: 50px;
-  text-transform: uppercase;
-  }
+  position: relative;
+}
 .leaf {
   position: absolute;
-  top: 26px;
-  left:191px;
+  bottom:-16px;
+  right: -7px;
   z-index: -1;
 }
 .header-title {
