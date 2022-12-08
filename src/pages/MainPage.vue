@@ -13,6 +13,7 @@
     <SaleSection />
     <BContainer>
       <FavouriteSection />
+      <DownloadAppSection/>
     </BContainer>
 
   </div>
@@ -25,6 +26,7 @@ import OurPartners from '@/components/OurPartners';
 import NewCollection from '@/components/NewCollection';
 import SaleSection from '@/components/SaleSection';
 import FavouriteSection from '@/components/FavouriteSection';
+import DownloadAppSection from '@/components/DownloadAppSection';
 import { mapGetters } from 'vuex';
 
 export default {
@@ -36,6 +38,7 @@ export default {
     NewCollection,
     SaleSection,
     FavouriteSection,
+    DownloadAppSection,
   },
   computed: {
     ...mapGetters('partners', ['getPartners']),

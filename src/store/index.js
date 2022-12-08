@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import partners from '@/store/modules/partners';
 import collections from '@/store/modules/collections';
-
+import link from '@/store/modules/link';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -36,5 +36,6 @@ export default new Vuex.Store({
   modules: {
     partners,
     collections,
+    link,
   },
 });
