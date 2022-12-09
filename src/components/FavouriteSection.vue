@@ -3,7 +3,6 @@
     <SectionTitle :title="getFavouriteTitle" styleText="capitalize"/>
     <div class="card-wrapper d-flex justify-content-between">
       <FavouriteItem :collection="item" v-for="(item, index) in getFavouriteCollection " :key="index"/>
-
     </div>
   </div>
 </template>
@@ -23,7 +22,7 @@ export default {
   },
 
 computed: {
-  ...mapGetters(['getFavouriteTitle','getFavouriteCollection']),
+  ...mapGetters(['getFavouriteTitle','getFavouriteCollection'])
 }
 
 

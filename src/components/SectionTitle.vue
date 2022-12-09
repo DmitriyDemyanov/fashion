@@ -27,12 +27,12 @@ export default {
 
 <style scoped>
 .title {
-  font-family: "Poppins";
+  position: relative;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
   line-height: 50px;
-  position: relative;
 }
 .leaf {
   position: absolute;
@@ -40,6 +40,7 @@ export default {
   right: -7px;
   z-index: -1;
 }
+
 .header-title {
   margin-bottom: 103px;
 }

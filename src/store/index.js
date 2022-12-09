@@ -21,15 +21,11 @@ export default new Vuex.Store({
         title: 'All Under $40',
       },
     ]
-
-
-
   },
   getters: {
     getCollectionTitle: ({ sectionTitles }) => sectionTitles.collection,
     getFavouriteTitle: ({ sectionTitles }) => sectionTitles.favourite,
     getFavouriteCollection: ({ sectionFavourite }) => sectionFavourite,
-
   },
   mutations: {},
   actions: {},
