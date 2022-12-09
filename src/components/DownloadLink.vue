@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="link-wrap">
     <a :href="downloadLink.link">
       <img :src="require(`@/assets/${downloadLink.img}.svg`)" alt="img">
     </a>
@@ -19,4 +19,7 @@ export default {
 </script>
 
 <style scoped>
+.link-wrap {
+  margin-right: 19px;
+}
 </style>

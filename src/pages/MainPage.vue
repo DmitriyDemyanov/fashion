@@ -15,7 +15,8 @@
       <FavouriteSection />
       <DownloadAppSection/>
     </BContainer>
-
+    <ShoppingPromo/>
+    <FooterSection/>
   </div>
 </template>
 
@@ -27,6 +28,8 @@ import NewCollection from '@/components/NewCollection';
 import SaleSection from '@/components/SaleSection';
 import FavouriteSection from '@/components/FavouriteSection';
 import DownloadAppSection from '@/components/DownloadAppSection';
+import ShoppingPromo from '@/components/ShoppingPromo';
+import FooterSection from '@/components/FooterSection';
 import { mapGetters } from 'vuex';
 
 export default {
@@ -39,6 +42,8 @@ export default {
     SaleSection,
     FavouriteSection,
     DownloadAppSection,
+    ShoppingPromo,
+    FooterSection,
   },
   computed: {
     ...mapGetters('partners', ['getPartners']),
