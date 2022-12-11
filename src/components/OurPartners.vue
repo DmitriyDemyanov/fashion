@@ -22,5 +22,6 @@ export default {
 
 .partner {
   background-color:#EBD96B;
+
 }
 </style>

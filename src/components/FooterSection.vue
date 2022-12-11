@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-wrapper d-flex">
+  <div class="footer-wrapper d-flex justify-content-between">
     <article>
       <h2 class="article-title">fashion</h2>
       <h6 class="articte-description">Complete your style with awesome<br> clothes from us.</h6>
@@ -7,7 +7,7 @@
         <SocialNetworks :network="item" v-for="(item, index) in getSocialLink" :key="index" />
       </div>
     </article>
-    <div>
+    <div class="d-flex">
       <SiteMenus :menu="item" v-for="(item,index) in getSiteMenu" :key="index"/>
     </div>
   </div>
@@ -60,4 +60,5 @@ export default {
   color: #8E8E8E;
   margin: 32px 0;
 }
+
 </style>

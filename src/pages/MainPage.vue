@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="my-container" >
     <BContainer>
       <HeaderSection />
       <UniqueClothes />
     </BContainer>
-    <div class="d-flex justify-content-around partners align-items-center">
+    <div class="d-flex justify-content-between partners align-items-center">
       <OurPartners :partner="item" v-for="(item,index) in getPartners " :key="index" />
     </div>
     <BContainer>
@@ -57,5 +57,11 @@ export default {
   margin-bottom: 69px;
   height: 186px;
   background-color: #EBD96B;
+  padding: 0 171px;
+
 }
+.my-container {
+    width: 1920px;
+    margin: 0 auto;
+  }
 </style>

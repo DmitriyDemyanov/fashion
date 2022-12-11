@@ -31,6 +31,7 @@ export default {
   font-weight: 400;
   font-size: 24px;
   line-height: 40px;
+  margin-left: 190px;
 }
 
 .link-wrapper a {
